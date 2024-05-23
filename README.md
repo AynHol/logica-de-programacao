@@ -1,6 +1,3 @@
 # Lógica de Programação
-Repositorio onde estara todos os códigos da Unidade curricular lógica de programação.
+Repositório onde estará todos os códigos da Unidade Curricular lógica de programação, do Curso Técnico de Desenvolvimento de Sistemas.
 
-## Autor
--[@AynHol]
-(https://www.github.com/AynHol)
