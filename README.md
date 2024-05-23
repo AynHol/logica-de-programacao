@@ -2,5 +2,5 @@
 Repositorio onde estara todos os códigos da Unidade curricular lógica de programação.
 
 ## Autor
--[@WAynHol]
+-[@AynHol]
 (https://www.github.com/AynHol)
