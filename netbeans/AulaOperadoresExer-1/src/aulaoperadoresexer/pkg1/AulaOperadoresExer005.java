@@ -14,6 +14,5 @@ public class AulaOperadoresExer005 {
         double k = c + 273.15;
         
         System.out.println(c + "°C é igual a " + f + "°F e " + k + "°K.");
-        
     }
 }

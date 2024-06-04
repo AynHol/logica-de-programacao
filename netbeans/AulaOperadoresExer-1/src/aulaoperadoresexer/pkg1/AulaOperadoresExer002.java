@@ -14,6 +14,5 @@ public class AulaOperadoresExer002 {
         
         double resultado = numero1 * numero2;
         System.out.println("A área é: " + resultado);
-        
     }
 }

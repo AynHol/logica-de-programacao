@@ -17,6 +17,5 @@ public class AulaOperadoresExer003 {
         int resultadof = resultado1 + resultado2 + dia;
         
         System.out.println("A sua idade em dias é: " + resultadof + " dias.");
-        
     }
 }

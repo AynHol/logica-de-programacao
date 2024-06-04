@@ -11,6 +11,5 @@ public class AulaOperadoresExer001 {
         numero--;
         
         System.out.println(numero);
-        
     }
 }
