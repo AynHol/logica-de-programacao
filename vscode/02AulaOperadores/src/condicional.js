@@ -1,14 +1,32 @@
 import leia from "readline-sync"
+
+//----------------------------------//
 // IF/ELSE
+//----------------------------------//
+
+//var numero = 0;
+//if (numero > 0) {
+//    console.log("Numero positivo...");
+//} else if (numero < 0) {
+//    console.log("Numero negativo...");
+//} else {
+//    console.log("O numero é zero.")
+//}
+
+//----------------------------------//
 
 //var x = 10;
 //if (x < 100) {
 //    console.log("Menor que cem");
-//} else if (x < 1000) {
+//} 
+
+//if (x < 1000) {
 //    console.log("Menor que mil");
 //}
 
+//----------------------------------//
 // SWITCH/CASE
+//----------------------------------//
 
 var codigoErro = leia.questionInt("Digite o codigo de erro: ");
 switch (codigoErro) {
