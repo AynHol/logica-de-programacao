@@ -1,24 +1,17 @@
-import leia from 'readline-sync'
+import leia from "readline-sync";
 
-var produto = leia.questionFloat("Qual o valor do produto?: ");
-var moeda1 = leia.questionInt("Quantas moedas de 1 real tem no cofrinho?: ");
-var moeda50 = leia.questionInt("Quantas moedas de 50 centavos tem no cofrinho?: ");
-var moeda25 = leia.questionInt("Quantas moedas de 25 centavos tem no cofrinho?: ");
-var moeda10= leia.questionInt("Quantas moedas de 10 centavos tem no cofrinho?: ");
-var moeda5 = leia.questionInt("Quantas moedas de 5 centavos tem no cofrinho?: ");
+var valorProduto = leia.questionFloat("Valor do produto");
 
-var moeda1 = 1
-var moeda50 = 0.50
-var moeda25 = 0.25
-var moeda10 = 0.10
-var moeda5 = 0.05
+var umReal = leia.questionInt("Numero de moedas de R$1 ");
+var cinquenta = leia.questionInt("Numero de moedas de R$0,50 ");
+var vinteCinco = leia.questionInt("Numero de moedas de R$0,25 ");
+var dez = leia.questionInt("Numero de moedas de R$0,10 ");
+var cinco = leia.questionInt("Numero de moedas de R$0,05 ");
 
-var total = moeda1 + moeda50 + moeda25 + moeda10 + moeda5;
+var total = (umReal * 1) + (cinquenta * 0.50) + (vinteCinco * 0.25) + (dez * 0.10) + (cinco * 0.05)
 
-console.log(total)
+console.log("Valor do produto: " + valorProduto);
+console.log("Total no porquinho: " + total)
 
-// if (produto >= total){
-//     console.log("Tem dinheiro suficiente no cofrinho.");
-// } else {
-//     console.log("Não tem dinheiro suficiente no cofrinho.");
-// }
+var mensagem = total >= valorProduto ? "Da para comprar o produto!" : "não da para comprar o produto!";
+console.log(mensagem);
