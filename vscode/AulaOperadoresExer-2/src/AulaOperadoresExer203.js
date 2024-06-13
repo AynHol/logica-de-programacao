@@ -1,6 +1,6 @@
 import leia from 'readline-sync'
 
-var placa = leia.question("Digite uma placa: ");
+var placa = leia.question("\nDigite uma placa: ");
 var final = placa.charAt(placa.length - 1)
 
 

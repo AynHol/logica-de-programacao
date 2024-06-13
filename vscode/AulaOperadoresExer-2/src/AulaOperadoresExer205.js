@@ -1,6 +1,6 @@
 import leia from 'readline-sync'
 
-var nome1 = leia.question("Nome do primeiro cliente: ");
+var nome1 = leia.question("\nNome do primeiro cliente: ");
 var numero1 = leia.questionFloat("Valor gasto: ");
 var nome2 = leia.question("Nome do segundo cliente: ");
 var numero2 = leia.questionFloat("Valor gasto: ");

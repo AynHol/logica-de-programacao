@@ -1,6 +1,6 @@
 import leia from "readline-sync";
 
-var valorProduto = leia.questionFloat("Valor do produto");
+var valorProduto = leia.questionFloat("\nValor do produto");
 
 var umReal = leia.questionInt("Numero de moedas de R$1 ");
 var cinquenta = leia.questionInt("Numero de moedas de R$0,50 ");
