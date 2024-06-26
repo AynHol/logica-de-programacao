@@ -1,10 +1,22 @@
 import leia from 'readline-sync';
 
-for (var i = 0; i <15; i++ ){
+var menor;
+var maior;
+
+for (var i = 0; i < 15; i++) {
     var numero = leia.questionInt("Digite um numero: ");
-    var menor = numero;
-    if (numero > menor) {
-        var maior = numero;
+
+    if(i === 0){
+        menor = numero;
+        maior = numero;
+    }
+
+    if(numero < menor) {
+        menor = numero;
+    }
+
+    if(numero > maior){
+        maior = numero;
     }
 }
 

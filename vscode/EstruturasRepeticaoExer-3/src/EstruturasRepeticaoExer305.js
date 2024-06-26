@@ -1,7 +1,7 @@
-var copias = 0;
-var custo = 0;
+var copias = 1;
 
-while (copias < 500) {
+while (copias <= 500) {
     copias++;
-    console.log((custo += 0.33).toFixed(2));
+    var valor = copias * 0.33;
+    console.log(copias + " copias = " + valor.toFixed(2));
 }

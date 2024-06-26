@@ -1,3 +1,8 @@
-for (var i = 10; i <= 500; i++) {
-    console.log(i)
+var contador = 10;
+while (contador <= 1000) {
+    if (contador === 501) {
+        contador = 900;
+    }
+    console.log(contador);
+    contador++;
 }
