@@ -2,16 +2,29 @@ import leia from 'readline-sync';
 
 var numero = leia.questionInt("Digite um numero decimal: ");
 console.log("O número decimal em binário é: ");
-var resul = 0;
-var resul2 = 0;
+var valor = numero;
+var bi = "";
 
-numero / 2 == resul2
-numero % 2 == resul
-console.log(resul)
+while(valor < 0){
+    var resul = parseInt(valor / 2);
+    var resul2 = valor % 2;
+    bi = bi + resul2;
+    valor = resul;
+}
 
-do{
-    resul2 % 2 == resul
-    resul2 /2 == resul2
-    console.log(resul)
-}while(resul /2 !== 0)
+console.log()
 
+
+// numero / 2 == resul;
+// numero % 2 == resul2;
+
+// do {
+//     resul / 2 == resul;
+//     resul % 2 == resul2;
+
+//     if (resul == 1 || 0) {
+//         console.log(resul)
+//     }
+
+//     console.log(resul2)
+// } while (resul !== 1 || 0)
