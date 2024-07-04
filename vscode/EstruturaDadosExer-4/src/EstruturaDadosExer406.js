@@ -14,4 +14,4 @@ for (var i = 0; i < 30; i++) {
 }
 
 console.log("Temperaturas baixas: " + baixas);
-console.log("Temperaturas altas: " +altas);
+console.log("Temperaturas altas: " + altas);
