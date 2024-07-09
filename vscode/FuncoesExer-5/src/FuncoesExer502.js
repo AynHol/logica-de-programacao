@@ -32,5 +32,5 @@ for (var i = 0; i < 10; i++) {
 console.log(ordem)
 console.log(cont)
 
-// erro no codigo = mesmo número repitido mais do que uma vez ele conta como mais de uma repitição.
-// ex: [1, 3, 3, 4, 7] = 1 repitido; [1, 3, 3, 6, 7, 7] = 2 repetidos; [1, 3, 4, 4, 4, 8] = 2 repitidos.
+// erro no codigo = mesmo número repetido mais do que uma vez ele conta como mais de uma repetição.
+// ex: [1, 3, 3, 4, 7] = 1 repetido; [1, 3, 3, 6, 7, 7] = 2 repetidos; [1, 3, 4, 4, 4, 8] = 2 repetidos.
