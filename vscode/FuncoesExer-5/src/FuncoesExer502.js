@@ -1,36 +1,13 @@
-function vetor() {
-    var array = []
-    for (var i = 0; i < 10; i++) {
-        array[i] = parseInt(Math.random() * 100)
-    }
-    return array
-}
+import { preencherVetor } from './utils/preencherVetor.js'
+import { verificaDuplicidade } from './utils/verificaDuplicidade.js'
 
-var vetor1 = vetor()
-var ordem = vetor1.sort()
-var cont = 0
-var anterior = 0
-var atual = 0
-
-for (var i = 0; i < 10; i++) {
-    atual = ordem[i]
-    if (i === 0) {
-        anterior = atual
-        atual = -1
-    } if (anterior === atual) {
-        cont++
-        anterior = atual
-        atual = -1
+export function FuncoesExer502() {
+    var vetor = preencherVetor(10, 0, 50);
+    var temDuplicidade = verificaDuplicidade(vetor);
+    console.log(vetor)
+    if (temDuplicidade) {
+        console.log("Tem duplicidade")
     } else {
-        if (i !== 0) {
-            anterior = atual
-            atual = -1
-        }
+        console.log("Não tem duplicidade")
     }
 }
-
-console.log(ordem)
-console.log(cont)
-
-// erro no codigo = mesmo número repetido mais do que uma vez ele conta como mais de uma repetição.
-// ex: [1, 3, 3, 4, 7] = 1 repetido; [1, 3, 3, 6, 7, 7] = 2 repetidos; [1, 3, 4, 4, 4, 8] = 2 repetidos.

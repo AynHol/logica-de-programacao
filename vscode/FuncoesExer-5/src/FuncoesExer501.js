@@ -1,27 +1,18 @@
-function vetor() {
-    var array = []
-    for (var i = 0; i < 9; i++) {
-        array[i] = parseInt(Math.random() * 100)
-    }
-    return array
+import { preencherVetor } from './utils/preencherVetor.js'
+import { obterItensVetor } from './utils/obterItensVetor.js'
+
+export function FuncoesExer501() {
+    var v1 = preencherVetor(9, 0, 100);
+    var v2 = preencherVetor(9, 0, 100);
+    var v3 = preencherVetor(9, 0, 100);
+
+    var vResultado = [];
+    vResultado = obterItensVetor(v1, vResultado, 0, 2);
+    vResultado = obterItensVetor(v2, vResultado, 3, 5);
+    vResultado = obterItensVetor(v3, vResultado, 6, 8);
+
+    console.log(v1)
+    console.log(v2)
+    console.log(v3)
+    console.log(vResultado)
 }
-
-var vetor1 = vetor()
-var vetor2 = vetor()
-var vetor3 = vetor()
-var vetorf = []
-
-for (var i = 0; i < 9; i++) {
-    if (i < 3) {
-        vetorf[i] = vetor1[i]
-    } else if (i > 2 && i < 6) {
-        vetorf[i] = vetor2[i]
-    } else {
-        vetorf[i] = vetor3[i]
-    }
-}
-
-console.log("O vetor final é = ", vetorf)
-console.log("O vetor 1 é = ", vetor1)
-console.log("O vetor 2 é = ", vetor2)
-console.log("O vetor 3 é = ", vetor3)
